@@ -51,11 +51,14 @@ public class Main {
       final int pos = index.get();
       final Team team = array[pos];
       // TODO DRY - eliminate this code duplication
-      System.out.println("Name: " + team.getName());
+/*      System.out.println("Name: " + team.getName());
       System.out.println("Head coach: " + team.getHeadcoach());
       System.out.println("Funding: " + team.getFunding());
       System.out.println("Array index: " + pos);
-      System.out.println("Ranking: " + (pos + 1));
+      System.out.println("Ranking: " + (pos + 1)); */
+      System.out.println("Name "+ team.getName() + "\n" + "Head Coach: " + team.getHeadcoach()
+              + "\n" + "Funding: " + team.getFunding()
+              + "\n" + "Array Index: " + pos + "\n" + "Ranking: " + (pos + 1));
     } else {
       System.out.println("Not Found!");
     }
@@ -68,11 +71,14 @@ public class Main {
       final int pos = index.get();
       final Team team = list.get(pos);
       // TODO DRY - eliminate this code duplication
-      System.out.println("Name: " + team.getName());
+/*      System.out.println("Name: " + team.getName());
       System.out.println("Head coach: " + team.getHeadcoach());
       System.out.println("Funding: " + team.getFunding());
       System.out.println("Array index: " + pos);
-      System.out.println("Ranking: " + (pos + 1));
+      System.out.println("Ranking: " + (pos + 1)); */
+      System.out.println("Name "+ team.getName() + "\n" + "Head Coach: " + team.getHeadcoach()
+              + "\n" + "Funding: " + team.getFunding()
+              + "\n" + "Array Index: " + pos + "\n" + "Ranking: " + (pos + 1));
     } else {
       System.out.println("Not Found!");
     }

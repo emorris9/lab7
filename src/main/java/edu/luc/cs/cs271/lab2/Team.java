@@ -13,13 +13,21 @@ public class Team {
 
   /** Constructs a new team. */
   public Team(final String name, final String headcoach, final int funding) {
-    if (name == null) {
+    if (name == null) //comparing the given reference to null
+    {
       throw new IllegalArgumentException("name is null");
     }
-    // TODO validity checking for headcoach
-    // TODO validity checking for funding
+    if (headcoach == null)
+    {
+      throw new IllegalArgumentException("headcoach is null");
+    }
+    if (funding == 0)
+    {
+      throw new IllegalArgumentException("funding is 0");
+    }
     this.name = name;
-    // TODO complete this constructor
+    this.headcoach = headcoach;
+    this.funding = funding;
   }
 
   /** Returns the team's name. */
@@ -29,13 +37,11 @@ public class Team {
 
   /** Returns the team's head coach. */
   public String getHeadcoach() {
-    // TODO complete this method
-    return null;
+    return this.headcoach;
   }
 
   /** Returns the team's funding level. */
   public int getFunding() {
-    // TODO complete this method
-    return -1;
+    return this.funding;
   }
 }
